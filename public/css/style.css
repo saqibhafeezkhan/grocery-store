@@ -1,0 +1,28 @@
+.address {
+    margin-bottom: -45px;
+}
+
+.paymentlabel {
+    margin-top: -10px;
+    margin-bottom: -35px;
+}
+
+.cod1 {
+    margin-left: 15px;
+    margin-top: 45px;
+}
+
+.totalabel {
+    margin-top: -25px;
+}
+
+.amount {
+    color: darkblue;
+    font-family: sans-serif;
+    margin-left: 80px;
+}
+
+.btn-success {
+    margin-left: 500px;
+    margin-bottom: 20px;
+}

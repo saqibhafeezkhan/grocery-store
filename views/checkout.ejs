@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECKOUT FORM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body onload="updateTotal()" class="bg-light">
+    <div class="container py-5 text-center">
+        <h1>CHECKOUT FORM</h1>
+        <p class="lead">Please enter your correct details.</p>
+    </div>
+    <div class="container">
+        <form action="/place_order" method="POST">
+            <div class="row g-5">
+                <div class="col-sm-6">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input id="firstName" name="firstName" type="text" class="form-control" placeholder="Enter Your First Name" required>
+                </div>
+                <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input id="lastName" name="lastName" type="text" class="form-control" placeholder="Enter Your Last Name" required>
+                </div>
+                <div class="col-sm-6">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input id="email" name="email" type="email" class="form-control" placeholder="Enter Your E-mail" required>
+                </div>
+                <div class="col-sm-6">
+                    <label for="contactNo" class="form-label">Mobile Number</label>
+                    <input id="contactNo" name="contactNo" type="number" maxlength="10" class="form-control" placeholder="Enter Your Contact Number" required>
+                </div>
+                <div class="col-12 address">
+                    <label class="form-label">Address</label>
+                </div>
+                <div class="col-4">
+                    <input id="houseNo" name="houseNo" type="text" class="form-control" placeholder="Flat/Building/House" required>
+                </div>
+                <div class="col-4">
+                    <input id="streetNo" name="streetNo" type="text" class="form-control" placeholder="Street/Lane" required>
+                </div>
+                <div class="col-4">
+                    <input id="city" name="city" type="text" class="form-control" placeholder="City/Village" required>
+                </div>
+                <div class="col-4">
+                    <label for="state" class="form-label">State</label>
+                    <select id="state" name="state" class="form-control" required>
+                        <option value="">Select Your State</option>
+                        <option value="J&K">Jammu And Kashmir</option>
+                        <option value="Ladakh">Ladakh</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <label for="country" class="form-label">Country</label>
+                    <select id="country" name="country" class="form-control" required>
+                        <option value="">Select Your Country</option>
+                        <option value="India">India</option> 
+                    </select>
+                </div>
+                <div class="col-4">
+                    <label for="pincode" class="form-label">Pin Code
+                    </label>
+                    <input id="pincode" name="pincode" type="number" class="form-control" maxlength="6" placeholder="Enter Your Area Postal Code" required>
+                </div>
+                <hr class="my-2">
+                <div class="col-6">
+                    <h4 class="paymentlabel">Mode of Payment</h4>
+                    <div class="form-check cod1">
+                        <input id="cod" type="radio" class="form-check-input" checked>
+                        <label for="cod" class="form-label">Cash On Delivery</label>
+                    </div>
+                </div>
+                <div class="col-6 total">
+                    <h3 class="totalabel">Total Payable Amount</h3>
+                    <h1 class="amount">₹320</h1>
+                </div>
+                <hr class="my-2">
+            </div>
+            <button type="submit" value="submit" class="btn btn-success btn-lg">Order Now</button>
+        </form>
+    </div>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/store.js"></script>
+
+</html>

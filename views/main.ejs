@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Order Details</title>
+</head>
+
+<body>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th class="text-center" colspan="12">ORDER DETAILS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-center fw-bold border-3">NAME</td>
+                <td class="text-center fw-bold border-3">CONTACT</td>
+                <td class="text-center fw-bold border-3">ADDRESS</td>
+                <td class="text-center fw-bold border-3">ITEMS</td>
+                <td class="text-center fw-bold border-3">TOTAL</td>
+                <td class="text-center fw-bold border-3">TIME</td>
+                <td class="text-center fw-bold border-3">APPROVAL</td>
+
+            </tr>
+            <% users.forEach(function(user) {%>
+                <tr>
+                    <td class="text-center border-3">
+                        <%= user.name %>
+                    </td>
+                    <td class="text-center border-3">
+                        <%= user.contact %>
+                    </td>
+                    <td class="text-center border-3">
+                        <%= user.address %>
+                    </td>
+                    <td class="text-center border-3">
+                        <%= user.items %>
+                    </td>
+                    <td class="text-center  border-3">₹
+                        <%= user.total %>
+                    </td>
+                    <td class="text-center border-3">
+                        <%= user.Time %>
+                    </td>
+                    <td>
+                        <a href="update/<%= user.contact %>" class="btn btn-success">APPROVE</a>
+                    </td>
+                </tr>
+                <% }); %>
+        </tbody>
+    </table>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</html>
