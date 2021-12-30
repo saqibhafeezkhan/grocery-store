@@ -43,7 +43,7 @@ function buyClicked(event) {
     var totalPrice = totalPriceItems.toString()
     totalPrice = totalPrice.substring(1)
     sessionStorage.setItem('Total', totalPrice)
-    window.open('http://localhost:3000/checkout', '_self')
+    window.open('https://grocerystore-one.herokuapp.com/checkout', '_self')
 }
 
 function quantityChanged(event) {
