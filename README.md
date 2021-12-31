@@ -1,6 +1,6 @@
 Grocery Store
 
-This is a online grocery store web app which demonstrates how E-Commerce Web Apps work.
+This is a demonstration of e-commerce store which offers groceries for our daily needs.
 
 DEMO : https://grocerystore-one.herokuapp.com/
 
